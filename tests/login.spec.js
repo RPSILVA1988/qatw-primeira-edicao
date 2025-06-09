@@ -5,14 +5,14 @@ import { obterCodigo2FA } from '../support/db';
 import { LoginPage } from '../pages/LoginPage';
 
 test('Nao deve logar quando o codigo de autenticacao e invalido', async ({ page }) => {
-  const loginPage = LoginPage()
+  const loginPage = new LoginPage(page)
 
   const usuario = {
     cpf: '00000014141',
     senha: '147258'
   }
 
-  await loginPage.acessaPage();
+  await loginPage.acessaPagina();
   await loginPage.preencherCPF(usuario.cpf)
   await loginPage.preencherSenha(usuario.senha)
   await loginPage.preencherCodigo2FA('123456') // Código inválido
@@ -22,14 +22,14 @@ test('Nao deve logar quando o codigo de autenticacao e invalido', async ({ page 
 
 test('Deve acessar a conta do usuario', async ({ page }) => {
 
-  const loginPage = LoginPage()
+  const loginPage = new LoginPage(page)
 
   const usuario = {
     cpf: '00000014141',
     senha: '147258'
   }
 
-  await loginPage.acessaPage();
+  await loginPage.acessaPagina();
   await loginPage.preencherCPF(usuario.cpf)
   await loginPage.preencherSenha(usuario.senha)
   
@@ -41,6 +41,6 @@ test('Deve acessar a conta do usuario', async ({ page }) => {
   //temporario
   await page.waitForTimeout(2000)
 
-  await expect(loginPage.obterSaldo()).toHaveText('R$ 5.000,00')
+  expect(await loginPage.obterSaldo()).toHaveText('R$ 5.000,00')
  
 });

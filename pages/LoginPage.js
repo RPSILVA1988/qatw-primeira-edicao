@@ -1,10 +1,9 @@
 export class LoginPage {
-
   constructor(page) {
-        this.page = page;
+        this.page = page
     }
 
-    async acessaPage(){
+    async acessaPagina(){
         await this.page.goto('http://paybank-mf-auth:3000/');
     }
 
