@@ -4,38 +4,151 @@
 
 "@playwright/test@^1.52.0":
   version "1.52.0"
-  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.52.0.tgz#267ec595b43a8f4fa5e444ea503689629e91a5b8"
+  resolved "https://registry.npmjs.org/@playwright/test/-/test-1.52.0.tgz"
   integrity sha512-uh6W7sb55hl7D6vsAeA+V2p5JnlAqzhqFyF0VcJkKZXkgnFcVG9PziERRHQfPLfNGx1C292a4JqbWzhR8L4R1g==
   dependencies:
     playwright "1.52.0"
 
 "@types/node@^22.15.30":
   version "22.15.30"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.30.tgz#3a20431783e28dd0b0326f84ab386a2ec81d921d"
+  resolved "https://registry.npmjs.org/@types/node/-/node-22.15.30.tgz"
   integrity sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==
   dependencies:
     undici-types "~6.21.0"
+
+assert-options@0.8.3:
+  version "0.8.3"
+  resolved "https://registry.npmjs.org/assert-options/-/assert-options-0.8.3.tgz"
+  integrity sha512-s6v4HnA+vYSGO4eZX+F+I3gvF74wPk+m6Z1Q3w1Dsg4Pnv/R24vhKAasoMVZGvDpOOfTg1Qz4ptZnEbuy95XsQ==
 
 fsevents@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
+pg-cloudflare@^1.1.1:
+  version "1.2.5"
+  resolved "https://registry.npmjs.org/pg-cloudflare/-/pg-cloudflare-1.2.5.tgz"
+  integrity sha512-OOX22Vt0vOSRrdoUPKJ8Wi2OpE/o/h9T8X1s4qSkCedbNah9ei2W2765be8iMVxQUsvgT7zIAT2eIa9fs5+vtg==
+
+pg-connection-string@^2.7.0:
+  version "2.9.0"
+  resolved "https://registry.npmjs.org/pg-connection-string/-/pg-connection-string-2.9.0.tgz"
+  integrity sha512-P2DEBKuvh5RClafLngkAuGe9OUlFV7ebu8w1kmaaOgPcpJd1RIFh7otETfI6hAR8YupOLFTY7nuvvIn7PLciUQ==
+
+pg-int8@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/pg-int8/-/pg-int8-1.0.1.tgz"
+  integrity sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==
+
+pg-minify@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.npmjs.org/pg-minify/-/pg-minify-1.7.0.tgz"
+  integrity sha512-kFPxAWAhPMvOqnY7klP3scdU5R7bxpAYOm8vGExuIkcSIwuFkZYl4C4XIPQ8DtXY2NzVmAX1aFHpvFSXQ/qQmA==
+
+pg-pool@^3.8.0:
+  version "3.10.0"
+  resolved "https://registry.npmjs.org/pg-pool/-/pg-pool-3.10.0.tgz"
+  integrity sha512-DzZ26On4sQ0KmqnO34muPcmKbhrjmyiO4lCCR0VwEd7MjmiKf5NTg/6+apUEu0NF7ESa37CGzFxH513CoUmWnA==
+
+pg-promise@^11.14.0:
+  version "11.14.0"
+  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-11.14.0.tgz#13bcd338851b7371dca8b21af1e775e109192182"
+  integrity sha512-x/HZ6hK0MxYllyfUbmN/XZc7JBYoow7KElyNW9hnlhgRHMiRZmRUtfNM/wcuElpjSoASPxkoIKi4IA5QlwOONA==
+  dependencies:
+    assert-options "0.8.3"
+    pg "8.14.1"
+    pg-minify "1.7.0"
+    spex "3.4.1"
+
+pg-protocol@^1.8.0:
+  version "1.10.0"
+  resolved "https://registry.npmjs.org/pg-protocol/-/pg-protocol-1.10.0.tgz"
+  integrity sha512-IpdytjudNuLv8nhlHs/UrVBhU0e78J0oIS/0AVdTbWxSOkFUVdsHC/NrorO6nXsQNDTT1kzDSOMJubBQviX18Q==
+
+pg-types@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/pg-types/-/pg-types-2.2.0.tgz"
+  integrity sha512-qTAAlrEsl8s4OiEQY69wDvcMIdQN6wdz5ojQiOy6YRMuynxenON0O5oCpJI6lshc6scgAY8qvJ2On/p+CXY0GA==
+  dependencies:
+    pg-int8 "1.0.1"
+    postgres-array "~2.0.0"
+    postgres-bytea "~1.0.0"
+    postgres-date "~1.0.4"
+    postgres-interval "^1.1.0"
+
+pg@8.14.1:
+  version "8.14.1"
+  resolved "https://registry.npmjs.org/pg/-/pg-8.14.1.tgz"
+  integrity sha512-0TdbqfjwIun9Fm/r89oB7RFQ0bLgduAhiIqIXOsyKoiC/L54DbuAAzIEN/9Op0f1Po9X7iCPXGoa/Ah+2aI8Xw==
+  dependencies:
+    pg-connection-string "^2.7.0"
+    pg-pool "^3.8.0"
+    pg-protocol "^1.8.0"
+    pg-types "^2.1.0"
+    pgpass "1.x"
+  optionalDependencies:
+    pg-cloudflare "^1.1.1"
+
+pgpass@1.x:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/pgpass/-/pgpass-1.0.5.tgz"
+  integrity sha512-FdW9r/jQZhSeohs1Z3sI1yxFQNFvMcnmfuj4WBMUTxOrAyLMaTcE1aAMBiTlbMNaXvBCQuVi0R7hd8udDSP7ug==
+  dependencies:
+    split2 "^4.1.0"
+
 playwright-core@1.52.0:
   version "1.52.0"
-  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.52.0.tgz#238f1f0c3edd4ebba0434ce3f4401900319a3dca"
+  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.52.0.tgz"
   integrity sha512-l2osTgLXSMeuLZOML9qYODUQoPPnUsKsb5/P6LJ2e6uPKXUdPK5WYhN4z03G+YNbWmGDY4YENauNu4ZKczreHg==
 
 playwright@1.52.0:
   version "1.52.0"
-  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.52.0.tgz#26cb9a63346651e1c54c8805acfd85683173d4bd"
+  resolved "https://registry.npmjs.org/playwright/-/playwright-1.52.0.tgz"
   integrity sha512-JAwMNMBlxJ2oD1kce4KPtMkDeKGHQstdpFPcPH3maElAXon/QZeTvtsfXmTMRyO9TslfoYOXkSsvao2nE1ilTw==
   dependencies:
     playwright-core "1.52.0"
   optionalDependencies:
     fsevents "2.3.2"
 
+postgres-array@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/postgres-array/-/postgres-array-2.0.0.tgz"
+  integrity sha512-VpZrUqU5A69eQyW2c5CA1jtLecCsN2U/bD6VilrFDWq5+5UIEVO7nazS3TEcHf1zuPYO/sqGvUvW62g86RXZuA==
+
+postgres-bytea@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/postgres-bytea/-/postgres-bytea-1.0.0.tgz"
+  integrity sha512-xy3pmLuQqRBZBXDULy7KbaitYqLcmxigw14Q5sj8QBVLqEwXfeybIKVWiqAXTlcvdvb0+xkOtDbfQMOf4lST1w==
+
+postgres-date@~1.0.4:
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/postgres-date/-/postgres-date-1.0.7.tgz"
+  integrity sha512-suDmjLVQg78nMK2UZ454hAG+OAW+HQPZ6n++TNDUX+L0+uUlLywnoxJKDou51Zm+zTCjrCl0Nq6J9C5hP9vK/Q==
+
+postgres-interval@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/postgres-interval/-/postgres-interval-1.2.0.tgz"
+  integrity sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==
+  dependencies:
+    xtend "^4.0.0"
+
+spex@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.npmjs.org/spex/-/spex-3.4.1.tgz"
+  integrity sha512-Br0Mu3S+c70kr4keXF+6K4B8ohR+aJjI9s7SbdsI3hliE1Riz4z+FQk7FQL+r7X1t90KPkpuKwQyITpCIQN9mg==
+
+split2@^4.1.0:
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/split2/-/split2-4.2.0.tgz"
+  integrity sha512-UcjcJOWknrNkF6PLX83qcHM6KHgVKNkV62Y8a5uYDVv9ydGQVwAHMKqHdJje1VTWpljG0WYpCDhrCdAOYH4TWg==
+
 undici-types@~6.21.0:
   version "6.21.0"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.21.0.tgz#691d00af3909be93a7faa13be61b3a5b50ef12cb"
+  resolved "https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz"
   integrity sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==
+
+xtend@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz"
+  integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==

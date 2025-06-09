@@ -9,5 +9,7 @@
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.15.30"
   },
-  "scripts": {}
+  "dependencies": {
+    "pg-promise": "^11.14.0"
+  }
 }
