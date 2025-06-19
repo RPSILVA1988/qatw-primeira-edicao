@@ -22,9 +22,6 @@ export class LoginPage {
     async preencherCodigo2FA(codigo) {
         await this.page.getByRole('textbox', { name: '000000' }).fill(codigo);
         await this.page.getByRole('button', { name: 'Verificar' }).click();
-    }
-
-    async obterSaldo() {
-        return await this.page.locator('#account-balance').textContent();
+    
     }   
 }
