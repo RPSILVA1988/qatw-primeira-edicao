@@ -23,5 +23,5 @@ export const getJob = async () => {
 }
 
 export const cleanJobs = async () => {
-    await queue.obliterate() // limpa todos os jobs na fila
+    await queue.obliterate({force:true}) // limpa todos os jobs na fila
 }          

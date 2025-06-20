@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'mcr.microsoft.com/playwright:v1.53.0-noble'
+            image 'mcr.microsoft.com/playwright:v1.50.1-noble'
+            //image 'mcr.microsoft.com/playwright:v1.53.0-noble'
             args '--network qatw-primeira-edicao_skynet'
         }
     }
@@ -14,7 +15,7 @@ pipeline {
         }
         stage('E2E Testes') {
             steps {
-                sh 'yarn playwright test'
+                sh 'npx playwright test'
             }
         }
     }
