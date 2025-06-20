@@ -19,9 +19,8 @@ export class LoginPage {
         await this.page.getByRole('button', { name: 'Continuar' }).click();
     }
 
-    async preencherCodigo2FA(codigo) {
-        await this.page.getByRole('textbox', { name: '000000' }).fill(codigo);
+    async preencherCodigo2FA(code) {
+        await this.page.getByRole('textbox', { name: '000000' }).fill(code);
         await this.page.getByRole('button', { name: 'Verificar' }).click();
-    
     }   
 }

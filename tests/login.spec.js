@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
-import { obterCodigo2FA } from '../support/db';
+import { obterCodigo2FA } from '../support/db.js';
 import { LoginPage } from '../pages/LoginPage';
 import { DashPage } from '../pages/DashPage';
+import { cleanJobs, getJob } from '../support/redis.js';
+
 
 test('Nao deve logar quando o codigo de autenticacao e invalido', async ({ page }) => {
   
@@ -31,18 +33,23 @@ test('Deve acessar a conta do usuario', async ({ page }) => {
     senha: '147258'
   }
 
+  // Limpar a fila de jobs antes do teste
+  await cleanJobs()
+
   await loginPage.acessaPagina();
   await loginPage.preencherCPF(usuario.cpf)
   await loginPage.preencherSenha(usuario.senha)
   
-  //temporario
-  await page.waitForTimeout(4000)
-  const code = await obterCodigo2FA()
+  await page.getByRole('heading', { name: 'Verificação em duas etapas' })
+    .waitFor({ timeout: 3000});
 
-  await loginPage.preencherCodigo2FA(code)  
-  //temporario
-  await page.waitForTimeout(2000)
+  const codigo = await getJob()
+  
+  //await page.waitForTimeout(4000)
+  //const code = await obterCodigo2FA()
 
-  expect(await dashPage.obterSaldo()).toHaveText('R$ 5.000,00')
- 
+  await loginPage.preencherCodigo2FA(codigo)  
+  
+  await expect(await dashPage.obterSaldo()).toHaveText('R$ 5.000,00')
+//await expect(await dashPage.obterSaldo()).toContainText('R$ 5.000,00')
 });

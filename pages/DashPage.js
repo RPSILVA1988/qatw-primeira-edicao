@@ -4,7 +4,6 @@ export class DashPage{
     }
 
     async obterSaldo() {
-        return await this.page.locator('#account-balance').textContent();
-    
+        return await this.page.locator('#account-balance')
     }
 }
