@@ -1,14 +1,6 @@
 import pgPromise from 'pg-promise'
 
-const pgp = pgPromise({
-    query: e => {
-        console.log('QUERY:', e.query)
-    },
-    error: (err, e) => {
-        console.error('ERROR:', err, e)
-    }
-})
-//const pgp = pgPromise()
+const pgp = pgPromise()
 const db = pgp('postgresql://dba:dba@paybank-db:5432/UserDB')
 
 export async function obterCodigo2FA(cpf) {
