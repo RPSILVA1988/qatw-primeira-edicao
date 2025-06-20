@@ -1,0 +1,105 @@
+[
+  Job {
+    queue: Queue {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      name: 'twoFactorQueue',
+      opts: [Object],
+      closed: false,
+      hasBlockingConnection: false,
+      connection: [RedisConnection],
+      qualifiedName: 'bull:twoFactorQueue',
+      keys: [Object],
+      toKey: [Function (anonymous)],
+      scripts: [Scripts],
+      token: '68afbb8e-3e86-4d16-9643-e00aeaff98bc',
+      libName: 'bullmq',
+      jobsOpts: {},
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    name: 'send2FACode',
+    data: {
+      name: 'Fernando',
+      cpf: '00000014141',
+      email: 'eu@fernandopapito.com.br',
+      code: '839404'
+    },
+    opts: { attempts: 0, backoff: undefined },
+    id: '1',
+    progress: 0,
+    returnvalue: null,
+    stacktrace: [],
+    delay: 0,
+    priority: 0,
+    attemptsStarted: 1,
+    attemptsMade: 0,
+    stalledCounter: 0,
+    repeatJobKey: undefined,
+    timestamp: 1750390482510,
+    parentKey: undefined,
+    debounceId: undefined,
+    deduplicationId: undefined,
+    toKey: [Function: bound ],
+    scripts: Scripts {
+      queue: [Object],
+      version: '5.54.3',
+      moveToFinishedKeys: [Array]
+    },
+    queueQualifiedName: 'bull:twoFactorQueue',
+    processedOn: 1750390482511
+  },
+  Job {
+    queue: Queue {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      name: 'twoFactorQueue',
+      opts: [Object],
+      closed: false,
+      hasBlockingConnection: false,
+      connection: [RedisConnection],
+      qualifiedName: 'bull:twoFactorQueue',
+      keys: [Object],
+      toKey: [Function (anonymous)],
+      scripts: [Scripts],
+      token: '68afbb8e-3e86-4d16-9643-e00aeaff98bc',
+      libName: 'bullmq',
+      jobsOpts: {},
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    name: 'send2FACode',
+    data: {
+      name: 'Fernando',
+      cpf: '00000014141',
+      email: 'eu@fernandopapito.com.br',
+      code: '509870'
+    },
+    opts: { attempts: 0, backoff: undefined },
+    id: '2',
+    progress: 0,
+    returnvalue: null,
+    stacktrace: [],
+    delay: 0,
+    priority: 0,
+    attemptsStarted: 0,
+    attemptsMade: 0,
+    stalledCounter: 0,
+    repeatJobKey: undefined,
+    timestamp: 1750390482511,
+    parentKey: undefined,
+    debounceId: undefined,
+    deduplicationId: undefined,
+    toKey: [Function: bound ],
+    scripts: Scripts {
+      queue: [Object],
+      version: '5.54.3',
+      moveToFinishedKeys: [Array]
+    },
+    queueQualifiedName: 'bull:twoFactorQueue'
+  }
+]
+839404
+Jobs na fila: 2
